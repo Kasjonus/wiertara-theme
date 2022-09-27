@@ -1,0 +1,12 @@
+{
+	"name": "wiertara-theme",
+	"displayName": "Wiertara",
+	"theme": "ui",
+	"version": "0.1.0",
+	"description": "A customizable, dark theme for Mailspring.",
+	"license": "MIT",
+	"engines": {
+		"mailspring": "*"
+	},
+	"private": true
+}
