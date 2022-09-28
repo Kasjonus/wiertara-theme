@@ -1,10 +1,108 @@
-@import 'ui-variables';
+@import "ui-variables";
 
 .preferences-sidebar,
-.preferences-content {
-  background: @messagelist-bg;
+.preferences-wrap .preferences-content,
+.preferences-wrap .container-preference-tabs .preferences-tabs,
+.toolbar-Preferences,
+.layout-mode-list .toolbar-MessageList,
+.sheet-toolbar-container.mode-popout,
+.sheet-toolbar .item-back .item-back-title,
+.nylas-editable-list .items-wrapper,
+.preferences-wrap .container-accounts .accounts-content .account-details,
+.nylas-editable-list .buttons-wrapper,
+.container-mail-rules .empty-list,
+.container-mail-rules .rule-detail,
+.container-mail-rules .rule-detail .well,
+.preferences-signatures-container .signature-wrap .section,
+.preferences-signatures-container .signature-wrap .signature-template-picker,
+.preferences-signatures-container .signature-wrap .signature-template-picker .option {
+	background: @messagelist-bg;
+	background-color: @messagelist-bg;
+	color: @sidebar-text;
 }
 
 .preferences-wrap .preferences-content > .scroll-region-content {
-  padding-bottom: 100px;
+	padding-bottom: 100px;
+}
+
+.nylas-editable-list .buttons-wrapper,
+.preferences-wrap .container-accounts .accounts-content .account-details,
+.nylas-editable-list .items-wrapper,
+.preferences-wrap .container-accounts .accounts-content .account-list .account,
+.nylas-editable-list .buttons-wrapper .btn-editable-list,
+.container-mail-rules .empty-list,
+.container-mail-rules .rule-detail,
+.container-mail-rules .rule-detail .well,
+.preferences-signatures-container .signature-wrap .section {
+	border-color: @accent;
+}
+
+.container-identity .identity-content-box,
+.preferences-wrap h6,
+.role-section .col-left,
+.preferences-signatures-container .signature-wrap .section.information .field label {
+	color: @sidebar-text;
+}
+
+.container-identity .identity-content-box .subscription-actions,
+.preferences-wrap .container-appearance .appearance-mode-switch,
+.preferences-wrap .container-keymaps .shortcut:hover .values {
+	color: rgba(35, 31, 32, 0.8);
+}
+
+.preferences-wrap .preferences-content img[alt="appearance-scale-big.png"],
+.preferences-wrap .preferences-content img[alt="appearance-scale-small.png"] {
+	filter: invert(1);
+}
+
+.preferences-wrap .container-appearance .appearance-mode-switch .appearance-mode.active,
+.preferences-wrap .platform-note:before,
+.nylas-editable-list .buttons-wrapper .btn-editable-list {
+	color: @accent;
+}
+
+.preferences-wrap .platform-note {
+	border-left-color: @accent;
+}
+
+.nylas-editable-list .items-wrapper .selected,
+.nylas-editable-list:focus .items-wrapper .selected,
+.preferences-wrap .container-preference-tabs .preferences-tabs .item.active {
+	background: @accent-secondary;
+}
+
+.account-details > .btn[style="margin-left: 6px;"] {
+	margin-left: 0 !important;
+	margin-top: 6px;
+}
+
+.account-details > div[style="display: flex; align-items: flex-end;"] {
+	align-items: center !important;
+}
+
+.container-identity .feature-explore-grid .feature {
+	background: @accent-secondary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: white;
+}
+
+.preferences-wrap p {
+	color: #ffffff80;
+}
+
+.btn {
+	background: @accent-secondary;
+	color: white;
+}
+
+.preferences-wrap .container-keymaps .shortcut,
+.preferences-wrap .container-keymaps .shortcut .values {
+	color: white;
 }

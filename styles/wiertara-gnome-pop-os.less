@@ -6,8 +6,8 @@ button.maximize {
 	flex-direction: row-reverse;
 	min-width: 60px;
 	width: 60px;
-	right: 13px;
-	top: 13px;
+	right: 15px;
+	top: 7px;
 }
 
 .toolbar-menu-control {
@@ -25,6 +25,14 @@ button.maximize {
 
 .toolbar-window-controls .close {
 	background-color: darkorange;
+}
+
+.toolbar-window-controls .minimize {
+	background-color: transparent;
+}
+
+.is-blurred .toolbar-window-controls .close, .is-blurred .toolbar-window-controls .minimize {
+	background-color: transparent;
 }
 
 .toolbar-window-controls .minimize {
@@ -57,14 +65,6 @@ button.maximize {
 	-webkit-text-stroke-width: 0.5px;
 }
 
-.toolbar-MessageListSidebar {
-	padding-top: 8px;
-}
-
 .toolbar-Preferences .toolbar-menu-control {
 	margin-top: 6px;
-}
-
-.sheet-toolbar-container.mode-split {
-	height: calc(100% + 32px) !important;
 }
