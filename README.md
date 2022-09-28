@@ -3,3 +3,5 @@
 A customizable, dark theme for Mailspring with Gnome controls.
 
 ![Screenshot](./screenshot/wiertara-theme.png)
+
+Based on Mailspring Darkside theme
